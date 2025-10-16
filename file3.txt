@@ -1,0 +1,31 @@
+program _Aaa0  ; 
+var int16_t _Aaa1 , _Bbb1 , _Caa1 , _Cbb1 , _Xee1;
+start
+  get ( _Aaa1 )
+  get ( _Bbb1 )
+
+  for _Aaa1 :> _Caa1 downto _Bbb1 do
+    put ( _Caa1 * _Caa1 )
+
+  0 :> _Xee1
+  for 1 :> _Caa1 downto _Aaa1 do
+    for 1 :> _Cbb1 downto _Bbb1 do
+       _Xee1 + 1 :> _Xee1
+  put ( _Xee1 )
+
+endprogram _Aaa0  ; 
+var int16_t _Aaa1 , _Bbb1 , _Caa1 , _Cbb1 , _Xee1;
+start
+  get ( _Aaa1 )
+  get ( _Bbb1 )
+
+  for _Aaa1 :> _Caa1 downto _Bbb1 do
+    put ( _Caa1 * _Caa1 )
+
+  0 :> _Xee1
+  for 1 :> _Caa1 downto _Aaa1 do
+    for 1 :> _Cbb1 downto _Bbb1 do
+       _Xee1 + 1 :> _Xee1
+  put ( _Xee1 )
+
+end

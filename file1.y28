@@ -7,15 +7,17 @@ start
   put ( _Aaa1 ++ _Bbb1 )
   put ( _Aaa1 -- _Bbb1 )
   put ( _Aaa1 * _Bbb1 )
-  put ( _Aaa1 / _Bbb1 )
+  put ( _Aaa1 \ _Bbb1 )
   put ( _Aaa1 % _Bbb1 )
 
-  (_Aaa1 -- _Bbb1) * 10 ++ (_Aaa1 ++ _Bbb1) / 10 >= _Xxx1
-  _Xxx1 ++ _Xxx1 % 10 >= _Yyy1
+  (_Aaa1 -- _Bbb1) * 10 ++ (_Aaa1 ++ _Bbb1) DIV 10 :> _Xxx1
+  _Xxx1 ++ _Xxx1 % 10 :> _Yyy1
 
   put ( _Xxx1 )
   put ( _Yyy1 )
 
 end
+
+
 
 

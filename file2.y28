@@ -21,7 +21,7 @@ start
   }
     
   if ! ( _Aaa1 >= 0 ) || ! ( _Bbb1 >= 0 ) || ! ( _Ccc1 >= 0 ) {
-    put ( -1 )
+    put ( --1 )
   } else {
     put ( 0 )
   }
@@ -33,4 +33,5 @@ start
   }
  
 end
+
 

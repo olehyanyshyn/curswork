@@ -1,15 +1,18 @@
-NAME _PROGRAM ; 
-BODY DATA INTEGER16 _AAAAAAA , _BBBBBBB , _CYCLEAA , _CYCLEBB , _XVALUEE;
-  GET ( _AAAAAAA )
-  GET ( _BBBBBBB )
+program _Aaa0 ; 
+var int16_t _Aaa1 , _Bbb1 , _Caa1 , _Cbb1 , _Xxx1 ;
+start
+  get (_Aaa1)
+  get (_Bbb1)
 
-  FOR _BBBBBBB :> _CYCLEAA DOWNTO _AAAAAAA DO
-    PUT ( _CYCLEAA * _CYCLEAA )
+  for _Bbb1 :> _Caa1 downto _Aaa1 do {
+    put (_Caa1 * _Caa1)
+  }
 
-  0 :> _XVALUEE
-  FOR _AAAAAAA :> _CYCLEAA DOWNTO 1 DO
-    FOR _BBBBBBB :> _CYCLEBB DOWNTO 1 DO
-      _XVALUEE ++ 1 :> _XVALUEE 
-  PUT ( _XVALUEE )
-
-END
+  0 :> _Xxx1
+  for _Aaa1 :> _Caa1 downto 1 do {
+    for _Bbb1 :> _Cbb1 downto 1 do {
+      _Xxx1 ++ 1 :> _Xxx1 
+    }
+  }
+  put (_Xxx1)
+end

@@ -6,15 +6,15 @@ start
   get ( _Ccc1 )
 
   if _Aaa1 >= _Bbb1 and _Aaa1 >= _Ccc1 {
-    _Aaa1 >= _Max1
+    _Aaa1 :> _Max1
   } else if _Bbb1 >= _Aaa1 and _Bbb1 >= _Ccc1 {
-    _Bbb1 >= _Max1
+    _Bbb1 :> _Max1
   } else {
-    _Ccc1 >= _Max1
+    _Ccc1 :> _Max1
   }
   put ( _Max1 )
-
-  if ( _Aaa1 == _Bbb1 ) and ( _Aaa1 == _Ccc1 ) and ( _Bbb1 == _Ccc1 ) {
+     if 0 {0} else {5} ++_Aaa1
+  if ( _Aaa1 eq _Bbb1 ) and ( _Aaa1 eq _Ccc1 ) and ( _Bbb1 eq _Ccc1 ) {
     put ( 1 )
   } else {
     put ( 0 )
@@ -25,13 +25,9 @@ start
   } else {
     put ( 0 )
   }
-
   if _Aaa1 >= ( _Bbb1 ++ _Ccc1 ) {
     put ( 10 )
   } else {
     put ( 0 )
   }
- 
 end
-
-
